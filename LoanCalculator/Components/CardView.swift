@@ -17,7 +17,6 @@ struct CardView: View {
     {
         //Vertical Stack
     VStack{
-        
             //Horizontal Stack
             HStack{
                     Image(image)
@@ -26,14 +25,13 @@ struct CardView: View {
                     }
                     .padding(10)
                     Text(textName)
-                        .fontWeight(.medium)
-                        .font(.custom("Chalkboard SE", size: 20))
-                        .foregroundColor(Color(hex:"273A5F"))
+                        .fontWeight(.light)
+                        .font(.custom(customFont, size: 20))
+                        .foregroundColor(Color(hex:customTextColor))
     }.frame(width: UIScreen.main.bounds.width/2.6, height: UIScreen.main.bounds.width/2.5, alignment: .center)
-        .background(Color(hex: "#F3F3F3"))
+        .background(Color(hex: customBackground))
         .cornerRadius(20)
     }
-    
 }
 
 struct CardView_Previews: PreviewProvider {

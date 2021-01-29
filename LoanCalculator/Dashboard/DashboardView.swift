@@ -22,7 +22,7 @@ struct DashboardView: View {
         
         NavigationView{
             ZStack{
-                Color(hex: "#F3F3F3")
+                Color(hex: customBackground)
                     .ignoresSafeArea(.all)
                 ScrollView{
                     
@@ -33,15 +33,25 @@ struct DashboardView: View {
                                     CardView(image: "add", textName: "Intrest rate")
                                     CardView(image: "add", textName: "Loan period")
                                     
-                                }).padding(.top, 10)
-                        .padding(.leading, 34)
-                        .padding(.trailing, 34)
+                                }).padding(.top, 30)
+                        .padding(.leading, 20)
+                        .padding(.trailing, 20)
+                        
+                    Text("Value of your Money")
+                        .frame(width: UIScreen.main.bounds.width-60, height: 20, alignment: .leading)
+                        .font(.system(size: 30))
+                       
+                        .padding(.top,30)
+                        
                     
                 }.navigationBarTitle("Loan Calculator")
                 .background(Color(UIColor.white))
                 .edgesIgnoringSafeArea(.bottom)
+                .cornerRadius(20)
                 
+            
             }
+            
             
         }
     }

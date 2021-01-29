@@ -11,10 +11,11 @@ struct NavigationBarCustomized: View {
     
     init() {
         UINavigationBar.appearance().backgroundColor = .clear
-//        UINavigationBar.appearance().largeTitleTextAttributes = [
-//            //.foregroundColor:UIColor.darkGray,
-//            //.font: UIFont(name:"Papyrus",size:40)!
-//        ]
+        UINavigationBar.appearance().largeTitleTextAttributes = [
+            .font: UIFont(name:customFont,size:40)!
+            
+        ]
+        
     }
     
     var body: some View {
