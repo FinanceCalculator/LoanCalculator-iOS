@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E252F81225C2849800023868 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E252F81125C2849800023868 /* DashboardView.swift */; };
 		E25C4E7925BB2AF40028FD09 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25C4E7825BB2AF40028FD09 /* CardView.swift */; };
 		E25C4E7F25BB4A370028FD09 /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25C4E7E25BB4A370028FD09 /* HexColor.swift */; };
 		E26BD7AE25BAEBDE00A24372 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26BD7AD25BAEBDE00A24372 /* AppDelegate.swift */; };
@@ -18,6 +19,7 @@
 		E26BD7BD25BAEBE100A24372 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E26BD7BB25BAEBE100A24372 /* LaunchScreen.storyboard */; };
 		E26BD7C825BAEBE200A24372 /* LoanCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26BD7C725BAEBE200A24372 /* LoanCalculatorTests.swift */; };
 		E26BD7D325BAEBE200A24372 /* LoanCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26BD7D225BAEBE200A24372 /* LoanCalculatorUITests.swift */; };
+		E2AC344025C3EB640067D3FB /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AC343F25C3EB640067D3FB /* NavigationBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E252F81125C2849800023868 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		E25C4E7825BB2AF40028FD09 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		E25C4E7E25BB4A370028FD09 /* HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
 		E26BD7AA25BAEBDE00A24372 /* LoanCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoanCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +58,7 @@
 		E26BD7CE25BAEBE200A24372 /* LoanCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoanCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26BD7D225BAEBE200A24372 /* LoanCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanCalculatorUITests.swift; sourceTree = "<group>"; };
 		E26BD7D425BAEBE200A24372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2AC343F25C3EB640067D3FB /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,10 +86,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E252F81025C2845200023868 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				E252F81125C2849800023868 /* DashboardView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
 		E25C4E7725BB2AD40028FD09 /* Components */ = {
 			isa = PBXGroup;
 			children = (
 				E25C4E7825BB2AF40028FD09 /* CardView.swift */,
+				E2AC343F25C3EB640067D3FB /* NavigationBar.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -121,8 +134,9 @@
 		E26BD7AC25BAEBDE00A24372 /* LoanCalculator */ = {
 			isa = PBXGroup;
 			children = (
-				E25C4E7D25BB49FD0028FD09 /* Extensions */,
+				E252F81025C2845200023868 /* Dashboard */,
 				E25C4E7725BB2AD40028FD09 /* Components */,
+				E25C4E7D25BB49FD0028FD09 /* Extensions */,
 				E26BD7AD25BAEBDE00A24372 /* AppDelegate.swift */,
 				E26BD7AF25BAEBDE00A24372 /* SceneDelegate.swift */,
 				E26BD7B125BAEBDE00A24372 /* ViewController.swift */,
@@ -286,6 +300,8 @@
 				E26BD7B225BAEBDE00A24372 /* ViewController.swift in Sources */,
 				E25C4E7F25BB4A370028FD09 /* HexColor.swift in Sources */,
 				E26BD7AE25BAEBDE00A24372 /* AppDelegate.swift in Sources */,
+				E2AC344025C3EB640067D3FB /* NavigationBar.swift in Sources */,
+				E252F81225C2849800023868 /* DashboardView.swift in Sources */,
 				E26BD7B025BAEBDE00A24372 /* SceneDelegate.swift in Sources */,
 				E26BD7B825BAEBDE00A24372 /* LoanCalculator.xcdatamodeld in Sources */,
 				E25C4E7925BB2AF40028FD09 /* CardView.swift in Sources */,

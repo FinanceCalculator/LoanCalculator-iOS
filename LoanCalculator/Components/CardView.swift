@@ -8,7 +8,6 @@
 import SwiftUI
 
 
-
 struct CardView: View {
     
     var image:String
@@ -18,18 +17,19 @@ struct CardView: View {
     {
         //Vertical Stack
     VStack{
+        
             //Horizontal Stack
             HStack{
                     Image(image)
                     .resizable()
-                    .frame(width: 100, height: 100, alignment: .center)
+                    .frame(width: 50, height: 50, alignment: .center)
                     }
                     .padding(10)
                     Text(textName)
                         .fontWeight(.medium)
                         .font(.custom("Chalkboard SE", size: 20))
                         .foregroundColor(Color(hex:"273A5F"))
-        }.frame(width: 200, height: 200, alignment: .center)
+    }.frame(width: UIScreen.main.bounds.width/2.6, height: UIScreen.main.bounds.width/2.5, alignment: .center)
         .background(Color(hex: "#F3F3F3"))
         .cornerRadius(20)
     }
