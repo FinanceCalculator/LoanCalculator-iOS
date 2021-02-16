@@ -1,5 +1,5 @@
 # LoanCalculator-iOS
-Loan Calculator is Work-in-progress EMI Caculator and Loan details manager iOS application.
+Loan Calculator is Work-in-progress EMI Caculator and Loan details manager iOS application Specifically made using SWIFTUI.
 
 ### Plugins Used
 
