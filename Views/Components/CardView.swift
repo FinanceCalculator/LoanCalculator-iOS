@@ -21,13 +21,14 @@ struct CardView: View {
             HStack{
                     Image(image)
                     .resizable()
-                    .frame(width: 50, height: 50, alignment: .center)
+                    .frame(width: 80, height: 80, alignment: .center)
                     }
                     .padding(10)
-                    Text(textName)
-                        .fontWeight(.light)
-                        .font(.custom(customFont, size: 20))
-                        .foregroundColor(Color(hex:customTextColor))
+        Text(textName)
+            .fontWeight(.light)
+            .font(.custom(customFont, size: 20))
+            .foregroundColor(Color(hex:customTextColor))
+       
     }.frame(width: UIScreen.main.bounds.width/2.6, height: UIScreen.main.bounds.width/2.5, alignment: .center)
         .background(Color(hex: customBackground))
         .cornerRadius(20)

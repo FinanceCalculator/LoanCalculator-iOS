@@ -9,7 +9,6 @@ import SwiftUI
 
 struct DashboardView: View {
     
-    
     //intialized Customized NavigationBar
     init() {
         _ = NavigationBarCustomized()
@@ -21,6 +20,7 @@ struct DashboardView: View {
     var body: some View {
         
         NavigationView{
+            
             ZStack{
                 Color(hex: customBackground)
                     .ignoresSafeArea(.all)
@@ -28,7 +28,12 @@ struct DashboardView: View {
                     
                     LazyVGrid(columns: layout,spacing:30, content:
                                 {
-                                    CardView(image: "add", textName: "EMI")
+        NavigationLink(
+            destination: EmiCalculatorUIView(),
+            label: {
+                CardView(image: "add", textName: "EMI")                                         })
+
+                                    
                                     CardView(image: "add", textName: "LOAN")
                                     CardView(image: "add", textName: "Intrest rate")
                                     CardView(image: "add", textName: "Loan period")
@@ -39,10 +44,17 @@ struct DashboardView: View {
                         
                     Text("Value of your Money")
                         .frame(width: UIScreen.main.bounds.width-60, height: 20, alignment: .leading)
-                        .font(.system(size: 30))
-                       
+                        .font(.system(size: 24))
                         .padding(.top,30)
                         
+                    LazyVGrid(columns: layout,spacing:40, content: {
+                        CardView(image: "add", textName: "Money Value")
+                        CardView(image: "add", textName: "Money Value")
+                        CardView(image: "add", textName: "Money Value")
+                        CardView(image: "add", textName: "Money Value")
+                    }).padding(.top, 30)
+                    .padding(.leading, 20)
+                    .padding(.trailing, 20)
                     
                 }.navigationBarTitle("Loan Calculator")
                 .background(Color(UIColor.white))
@@ -68,5 +80,7 @@ struct DashboardView_Previews: PreviewProvider {
         
     }
 }
+
+
 
 
