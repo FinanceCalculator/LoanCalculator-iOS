@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E23DE05C25DBD42900C0E9DE /* customSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23DE05B25DBD42900C0E9DE /* customSlider.swift */; };
 		E24E803525C4304500E2BC5A /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24E803425C4304500E2BC5A /* Theme.swift */; };
 		E252F81225C2849800023868 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E252F81125C2849800023868 /* DashboardView.swift */; };
 		E25C4E7925BB2AF40028FD09 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25C4E7825BB2AF40028FD09 /* CardView.swift */; };
@@ -23,6 +22,8 @@
 		E26BD7D325BAEBE200A24372 /* LoanCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26BD7D225BAEBE200A24372 /* LoanCalculatorUITests.swift */; };
 		E27AF5A025DAA8BD0084A69F /* EmiCalulatorFormulas.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27AF59F25DAA8BD0084A69F /* EmiCalulatorFormulas.swift */; };
 		E27AF5B425DAB3730084A69F /* EmiCalculatorUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27AF5B325DAB3730084A69F /* EmiCalculatorUIView.swift */; };
+		E28EB22F25FB784200B83BEF /* BMICalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28EB22E25FB784200B83BEF /* BMICalculator.swift */; };
+		E28EB23425FB79DA00B83BEF /* BMIFormula.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28EB23325FB79DA00B83BEF /* BMIFormula.swift */; };
 		E2AC344025C3EB640067D3FB /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AC343F25C3EB640067D3FB /* NavigationBar.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +45,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E23DE05B25DBD42900C0E9DE /* customSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customSlider.swift; sourceTree = "<group>"; };
 		E24E803425C4304500E2BC5A /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		E252F81125C2849800023868 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		E25C4E7825BB2AF40028FD09 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -66,6 +66,8 @@
 		E26BD7D425BAEBE200A24372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E27AF59F25DAA8BD0084A69F /* EmiCalulatorFormulas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmiCalulatorFormulas.swift; sourceTree = "<group>"; };
 		E27AF5B325DAB3730084A69F /* EmiCalculatorUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmiCalculatorUIView.swift; sourceTree = "<group>"; };
+		E28EB22E25FB784200B83BEF /* BMICalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMICalculator.swift; sourceTree = "<group>"; };
+		E28EB23325FB79DA00B83BEF /* BMIFormula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIFormula.swift; sourceTree = "<group>"; };
 		E2AC343F25C3EB640067D3FB /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,7 +109,6 @@
 			children = (
 				E25C4E7825BB2AF40028FD09 /* CardView.swift */,
 				E2AC343F25C3EB640067D3FB /* NavigationBar.swift */,
-				E23DE05B25DBD42900C0E9DE /* customSlider.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -124,8 +125,9 @@
 		E26BD7A125BAEBDE00A24372 = {
 			isa = PBXGroup;
 			children = (
-				E27AF59E25DAA8A20084A69F /* Calculators */,
 				E26BD7AC25BAEBDE00A24372 /* Views */,
+				E2B921962605C9AA006836FB /* Model */,
+				E2B921972605C9B6006836FB /* ViewModel */,
 				E26BD7C625BAEBE200A24372 /* LoanCalculatorTests */,
 				E26BD7D125BAEBE200A24372 /* LoanCalculatorUITests */,
 				E26BD7AB25BAEBDE00A24372 /* Products */,
@@ -145,6 +147,7 @@
 		E26BD7AC25BAEBDE00A24372 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E28EB22D25FB782900B83BEF /* Fitness */,
 				E27AF5A725DAB1A70084A69F /* EMI */,
 				E252F81025C2845200023868 /* Dashboard */,
 				E25C4E7725BB2AD40028FD09 /* Components */,
@@ -183,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				E27AF59F25DAA8BD0084A69F /* EmiCalulatorFormulas.swift */,
+				E28EB23325FB79DA00B83BEF /* BMIFormula.swift */,
 			);
 			path = Calculators;
 			sourceTree = "<group>";
@@ -193,6 +197,29 @@
 				E27AF5B325DAB3730084A69F /* EmiCalculatorUIView.swift */,
 			);
 			path = EMI;
+			sourceTree = "<group>";
+		};
+		E28EB22D25FB782900B83BEF /* Fitness */ = {
+			isa = PBXGroup;
+			children = (
+				E28EB22E25FB784200B83BEF /* BMICalculator.swift */,
+			);
+			path = Fitness;
+			sourceTree = "<group>";
+		};
+		E2B921962605C9AA006836FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E2B921972605C9B6006836FB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E27AF59E25DAA8A20084A69F /* Calculators */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,14 +356,15 @@
 				E26BD7B225BAEBDE00A24372 /* ViewController.swift in Sources */,
 				E27AF5B425DAB3730084A69F /* EmiCalculatorUIView.swift in Sources */,
 				E25C4E7F25BB4A370028FD09 /* HexColor.swift in Sources */,
+				E28EB22F25FB784200B83BEF /* BMICalculator.swift in Sources */,
 				E26BD7AE25BAEBDE00A24372 /* AppDelegate.swift in Sources */,
 				E2AC344025C3EB640067D3FB /* NavigationBar.swift in Sources */,
 				E252F81225C2849800023868 /* DashboardView.swift in Sources */,
-				E23DE05C25DBD42900C0E9DE /* customSlider.swift in Sources */,
 				E26BD7B025BAEBDE00A24372 /* SceneDelegate.swift in Sources */,
 				E27AF5A025DAA8BD0084A69F /* EmiCalulatorFormulas.swift in Sources */,
 				E26BD7B825BAEBDE00A24372 /* LoanCalculator.xcdatamodeld in Sources */,
 				E25C4E7925BB2AF40028FD09 /* CardView.swift in Sources */,
+				E28EB23425FB79DA00B83BEF /* BMIFormula.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

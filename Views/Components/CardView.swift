@@ -30,8 +30,12 @@ struct CardView: View {
             .foregroundColor(Color(hex:customTextColor))
        
     }.frame(width: UIScreen.main.bounds.width/2.6, height: UIScreen.main.bounds.width/2.5, alignment: .center)
-        .background(Color(hex: customBackground))
-        .cornerRadius(20)
+    .font(.title2)
+    .background(Color.neuBackground)
+    .cornerRadius(10)
+    .shadow(color: .dropShadow, radius: 15, x: 10, y: 10)
+    .shadow(color: .dropLight, radius: 15, x: -10, y: -10)
+
     }
 }
 

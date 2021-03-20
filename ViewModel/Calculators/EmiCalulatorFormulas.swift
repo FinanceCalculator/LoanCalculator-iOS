@@ -30,20 +30,20 @@ func totalIntrestPayable(TotalPayment:Double,LoanAmount:Double) -> Double {
 
 func callEMICalculator(loanAmount:Double,intrestRate:Double,tenure:Double)-> Double
 {
-    let installaments:Double
-let results = emiCalulator(LoanAmount: loanAmount, IntrestRate: intrestRate, Tenure: tenure)
-    
-let totalPayments = totalPayment(emi: results, Tenure: tenure)
-    
-let intrestPaid = totalIntrestPayable(TotalPayment: totalPayments, LoanAmount: loanAmount)
+        let installaments:Double
+        let results = emiCalulator(LoanAmount: loanAmount, IntrestRate: intrestRate, Tenure: tenure)
 
-    if results.isInfinite || results.isNaN
-    {
+        let totalPayments = totalPayment(emi: results, Tenure: tenure)
+
+        let intrestPaid = totalIntrestPayable(TotalPayment: totalPayments, LoanAmount: loanAmount)
+
+        if results.isInfinite || results.isNaN
+        {
         installaments = 0
-    }else
-    {
+        }else
+        {
         installaments = Double(Int(results))
-        
-    }
-    return installaments
+
+        }
+        return installaments
 }
