@@ -1,6 +1,9 @@
 # LoanCalculator-iOS
 Calculator is Work-in-progress where the goal is to create all in one calculator with interactive UI and with latest SWIFT Technologies. Specifically made using SWIFTUI.
 
+![githubCalc](https://user-images.githubusercontent.com/12672797/112830326-fcce7f00-90af-11eb-8111-03decb5870c3.png)
+
+
 ### UI
 - [SWIFTUI](https://developer.apple.com/xcode/swiftui/)
 
